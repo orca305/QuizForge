@@ -1,0 +1,26 @@
+{
+  "name": "quizforge-web",
+  "version": "0.4.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc -p tsconfig.tests.json && node --test .test-build/tests/text-file.test.js"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8.5.33",
+    "tailwindcss": "4.3.5",
+    "typescript": "^5.9"
+  }
+}
